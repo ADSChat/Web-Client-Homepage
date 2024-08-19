@@ -1,24 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ADS-Chat</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADS-Chat</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .banner {
+            background-color: purple;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .banner .name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .banner .top-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .banner .top-buttons button {
+            background-color: white;
+            color: purple;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="logo">
-      <!-- Placeholder for logo -->
-      <img src="logo.png" alt="ADS-Chat Logo">
+    <div class="banner">
+        <div class="name">ADS-Chat</div>
+        <div class="top-buttons">
+            <button onclick="window.location.href='https://example-login.com'">Login</button>
+            <button onclick="window.location.href='https://example-signup.com'">Sign Up</button>
+        </div>
     </div>
-    <h1>Welcome to ADS-Chat</h1>
-    <div class="buttons">
-      <button class="btn login-btn">Login</button>
-      <button class="btn register-btn">Register</button>
-      <button class="btn download-btn">Downloads</button>
+    <div class="container">
+        <div class="logo">
+            <!-- Placeholder for logo -->
+            <img src="logo.png" alt="ADS-Chat Logo">
+        </div>
+        <h1>Welcome to ADS-Chat</h1>
+        <div class="buttons">
+            <button class="btn login-btn" onclick="window.location.href='login.html'">Login</button>
+            <button class="btn register-btn" onclick="window.location.href='register.html'">Register</button>
+            <button class="btn download-btn" onclick="window.location.href='downloads.html'">Downloads</button>
+        </div>
     </div>
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
