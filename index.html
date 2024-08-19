@@ -7,12 +7,17 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .banner {
+            width: 100%;
             background-color: purple;
             color: white;
             padding: 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
         .banner .name {
             font-size: 24px;
@@ -28,6 +33,9 @@
             border: none;
             padding: 10px 20px;
             cursor: pointer;
+        }
+        .container {
+            margin-top: 60px; /* Adjust this value based on the height of your banner */
         }
     </style>
 </head>
